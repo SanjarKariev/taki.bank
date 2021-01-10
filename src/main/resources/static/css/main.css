@@ -1,0 +1,125 @@
+button {
+    cursor: pointer;
+}
+
+.title {
+    color: #171717;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #f0f4ef;
+}
+
+hr {
+    background-color: #ffc144;
+    color: #ffc144;
+}
+
+.payments {
+    border-left: 2px solid #ffc144;
+    padding-left: 10px
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    background: #303030;
+}
+
+.lef,
+.rig {
+    width: 50%;
+    padding: 20px
+}
+
+.form {
+    border-left: 2px solid #ffc144;
+    padding-left: 10px
+}
+
+.inp {
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: #171717;
+    border: 0;
+    width: 160px
+}
+
+.first {
+    margin-top: 0
+}
+
+.spending {
+    background-color: #e3e6ef;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    display: flex
+}
+
+.translations {
+    height: 100%;
+    width: 134px;
+    background-color: #20bede;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px
+}
+
+.purchases {
+    height: 100%;
+    width: 43px;
+    background-color: #fdde31
+}
+
+.more {
+    height: 100%;
+    width: 23px;
+    background-color: #fd9899;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.translations_e,
+.purchases_e,
+.more_e {
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    display: block;
+    margin-right: 10px
+}
+
+.translations_e {
+    background-color: #20bede
+}
+
+.purchases_e {
+    background-color: #fdde31
+}
+
+.more_e {
+    background-color: #fd9899
+}
+
+.ab {
+    display: flex
+}
+
+.all_spending {
+    border-left: 2px solid #ffc144;
+    padding-left: 10px
+}
+
+@media only screen and (max-width: 730px) {
+
+    .rig,
+    .lef {
+        width: 400px
+    }
+}

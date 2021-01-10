@@ -36,5 +36,10 @@ public class MainController {
         model.addAttribute("title", "Траты");
         return "spending";
     }
+    /*@GetMapping("/header")
+    public String header(Model model) {
+        model.addAttribute("title", "header");
+        return "header";
+    }*/
 
 }
