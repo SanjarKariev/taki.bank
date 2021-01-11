@@ -31,15 +31,15 @@ public class MainController {
         return "depositsht";
     }
 
+    @GetMapping("/signIn")
+    public String signIn(Model model) {
+        model.addAttribute("title", "signIn");
+        return "signIn";
+    }
     @GetMapping("/spending")
     public String spending(Model model) {
         model.addAttribute("title", "Траты");
         return "spending";
     }
-    /*@GetMapping("/header")
-    public String header(Model model) {
-        model.addAttribute("title", "header");
-        return "header";
-    }*/
 
 }
