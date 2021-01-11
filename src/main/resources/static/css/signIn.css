@@ -1,34 +1,99 @@
 a.buttonSignIn {
   padding: 3px 14px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
-   -webkit-transform-origin: 50% 1px;
-   -webkit-transition: all 0.15s ease-in-out;
-  background:  #161616;
+  -webkit-transform-origin: 50% 1px;
+  -webkit-transition: all 0.15s ease-in-out;
+  background: #161616;
   border-color: rgba(255, 255, 255, 0.027451) #FF8C39 rgba(255, 255, 255, 0.027451) rgba(255, 255, 255, 0.027451);
-   border-style: solid;
+  border-style: solid;
   border-width: 1px 4px 1px 1px;
   box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
   color: #555;
-  display:block;
-  width:90px;
+  display: block;
+  width: 90px;
   font-family: Open Sans, Sans-serif;
   border-radius: 5px;
-   font-size: 13px;
+  font-size: 13px;
   letter-spacing: 4px;
   text-shadow: rgb(0, 0, 0) 0px 1px 1px;
   line-height: 30px;
   position: relative;
- margin: 20px auto;
+  margin: 20px auto;
   text-align: center;
-  text-decoration:none;
+  text-decoratiform-signinon: none;
 }
+
 a.buttonSignIn:hover {
   cursor: pointer;
   opacity: 0.9;
   border-width: 1px 7px 1px 1px;
 }
+
 a.buttonSignIn:active {
--webkit-box-shadow:inset rgba(0, 0, 0, 0.701961) 0px 7px 12px,rgba(0, 0, 0, 0.701961) 0px 2px 12px  ;
-text-shadow: rgb(0, 0, 0) 0px -2px 1px;
-margin-top: 1px;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.701961) 0px 7px 12px, rgba(0, 0, 0, 0.701961) 0px 2px 12px;
+  text-shadow: rgb(0, 0, 0) 0px -2px 1px;
+  margin-top: 1px;
+}
+
+.form-signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+
+.form_signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.h3_text_greeting {
+  width: 250px;
+}
+
+.form-control {
+  width: 250px;
+  border: 0;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 20px;
+  background: #171717;
+  height: 34px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.div_img,
+.div_input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #171717;
+}
+
+.savePas {
+  width: 250px;
+  margin-top: 30px;
+}
+
+.buttonSignIn {
+  width: 250px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  background: #063b4a;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff9a4e;
+  font-weight: bold;
 }

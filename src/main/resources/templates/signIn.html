@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html xmlns:th="https://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link th:href="@{/css/header.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
-        <link th:href="@{/css/main.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
-        <link th:href="@{/css/signIn.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <title>Bank</title>
-    </head>
-    <body class="text-center">
-        <header th:insert="block/header :: header"></header> <!--including HTML files with Thymeleaf-->
+    <link th:href="@{/css/header.css}" rel="stylesheet" />
+    <!--including CSS files with Thymeleaf-->
+    <link th:href="@{/css/main.css}" rel="stylesheet" />
+    <!--including CSS files with Thymeleaf-->
+    <link th:href="@{/css/signIn.css}" rel="stylesheet" />
+    <!--including CSS files with Thymeleaf-->
 
-        <main class="form-signin">
-            <form>
-                <img class="img_logo" th:src="@{/img/logo.png}" alt="" width="100" height="100"> <!--including PNG files with Thymeleaf-->
-                <h1 class="h3_text_greeting">Вход в taki.Bank</h1>
-                <!--<label for="inputEmail" class="visually-hidden">Введите логин</label>-->
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-                <!--<label for="inputPassword" class="visually-hidden">Введите пароль</label>-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Bank</title>
+</head>
+
+<body class="text-center">
+    <header th:insert="block/header :: header"></header>
+    <!--including HTML files with Thymeleaf-->
+
+    <main class="form-signin">
+        <form class="form_signin">
+            <div class="div_img">
+                <img class="img_logo" th:src="@{/img/logo.png}" alt="" width="100" height="100">
+            </div>
+            <!--including PNG files with Thymeleaf-->
+            <h1 class="h3_text_greeting">Вход в taki.Bank</h1>
+
+
+            <div class="div_input">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                    autofocus="">
+            </div>
+
+            <!--<label for="inputEmail" class="visually-hidden">Введите логин</label>-->
+
+            <!--<label for="inputPassword" class="visually-hidden">Введите пароль</label>-->
+            <div class="div_input">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-                <div class="savePas">
-                    <label>
-                        <input type="checkbox" value="savePassword"> Save password
-                    </label>
-                </div>
-                <button class="buttonSignIn" >Sign in</button>
-            </form>
-        </main>
-    </body>
+            </div>
+            <div class="savePas">
+                <label>
+                    <input type="checkbox" value="savePassword"> Save password
+                </label>
+            </div>
+            <div class="div_input">
+                <button class="buttonSignIn">Sign in</button>
+            </div>
+        </form>
+    </main>
+</body>
+
 </html>
