@@ -10,7 +10,7 @@ header {
     height: 60px;
     background: #ffc144;
     position: absolute;
-    top: 0;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,9 +20,11 @@ header {
 .menu{
     display: flex;
     justify-content: space-around;
+    padding-top: 5px;
 }
 .menu a {
     margin-right: 50px;
     text-decoration: underline;
     cursor: pointer;
+    text-decoration: none;
 }

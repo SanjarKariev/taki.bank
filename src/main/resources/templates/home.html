@@ -7,8 +7,9 @@
 
         <link th:href="@{/css/main.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
         <link th:href="@{/css/header.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
+        <link rel="shortcut icon" th:href="@{/img/logo.ico}" type="image/x-icon"> <!--including ico files with Thymeleaf-->
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"><!--the library with the font is pulled up-->
         <title>Bank</title>
     </head>
 
@@ -16,15 +17,21 @@
         <header th:insert="block/header :: header"></header> <!--including HTML files with Thymeleaf-->
 
         <div class="lef">
-            <h1>Taki Bank</h1>
+            <!--<h1>Taki Bank</h1>
             <p>Твой баланс: 50 000₽</p>
-            <p>История переводов/платежей:</p>
+            <p>История переводов/платежей:</p>-->
             <div class="payments">
-                <p>Оплата 100₽, REG.PY</p>
+                <div th:each="el: ${userBD}">
+                    <h3 th:text="${el.number_card}"/>
+                    <p th:text="${el.name}"/>
+                    <p th:text="${el.surname}"/>
+                    <p th:text="${el.patronymic}"/>
+                <!--<p>Оплата 100₽, REG.PY</p>
                 <p>Перевод на 2134 **** **** 4356, 150₽ </p>
                 <p>Оплата номера +7 977 693 88 31, 890₽ </p>
                 <p>Оплата 100₽, KFS</p>
-                <p>Оплата 100₽, CPPK</p>
+                <p>Оплата 100₽, CPPK</p>-->
+                </div>
             </div>
         </div>
     </body>

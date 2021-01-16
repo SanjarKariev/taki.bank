@@ -1,4 +1,4 @@
-package taki.Bank.controller;
+package taki.Bank.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
