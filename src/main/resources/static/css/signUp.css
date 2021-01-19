@@ -1,4 +1,4 @@
-a.buttonSignIn {
+a.buttonSignUp {
   padding: 3px 14px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.701961) 0px 5px 12px;
   -webkit-transform-origin: 50% 1px;
@@ -23,19 +23,19 @@ a.buttonSignIn {
   text-decoratiform-signinon: none;
 }
 
-a.buttonSignIn:hover {
+a.buttonSignUp:hover {
   cursor: pointer;
   opacity: 0.9;
   border-width: 1px 7px 1px 1px;
 }
 
-a.buttonSignIn:active {
+a.buttonSignUp:active {
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.701961) 0px 7px 12px, rgba(0, 0, 0, 0.701961) 0px 2px 12px;
   text-shadow: rgb(0, 0, 0) 0px -2px 1px;
   margin-top: 1px;
 }
 
-.form-signin {
+.form-signup {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@ a.buttonSignIn:active {
   height: calc(100vh - 60px);
 }
 
-.form_signin {
+.form_signup {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,7 @@ a.buttonSignIn:active {
 }
 
 .h3_text_greeting {
-  width: 250px;
+  width: 350px;
 }
 
 .form-control {
@@ -77,12 +77,12 @@ a.buttonSignIn:active {
   color: #171717;
 }
 
-.savePas {
-  width: 250px;
+.consent {
+  width: 350px;
   margin-top: 30px;
 }
 
-.buttonSignIn {
+.buttonSignUp {
   width: 250px;
   margin-top: 30px;
   padding: 10px;
@@ -90,14 +90,10 @@ a.buttonSignIn:active {
   border-radius: 5px;
   font-size: 18px;
   background: #063b4a;
-  height: 35px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ff9a4e;
   font-weight: bold;
-}
-.sign_up{
-  margin-top: 20px;
-  text-decoration: none;
 }

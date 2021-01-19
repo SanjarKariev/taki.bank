@@ -14,6 +14,16 @@ public class userBD {
 
     private String name, surname, patronymic;
     private float number_card;
+
+    public userBD(Long id, String name, String surname, String patronymic, float number_card, int valid_thru) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.patronymic = patronymic;
+        this.number_card = number_card;
+        this.valid_thru = valid_thru;
+    }
+
     private int valid_thru;
 
     public Long getId() {
