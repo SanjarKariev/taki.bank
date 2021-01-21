@@ -17,13 +17,8 @@
     <body>
         <header th:insert="block/header :: header"></header> <!--including HTML files with Thymeleaf-->
         <div class="lef">
-            <div class="payments">
-                <h3>
-                    Тут должный выводиться данные с бд.
-                    <br>
-                    number_card, name, surname, patronymic
-                </h3>
-                <!--<h3 th:te xt="${user.number_card}">Number Card</h3>
+            <div class="payments" ><!--th:each="user: ${userBD}"-->
+                <!--<h3 th:text="${user.number_card}">Number Card</h3>
                 <p th:text="${user.name}">Name</p>
                 <p th:text="${user.surname}">Surname</p>
                 <p th:text="${user.patronymic}">Patronymic</p>-->

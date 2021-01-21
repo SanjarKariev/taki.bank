@@ -50,10 +50,6 @@ a.buttonSignIn:active {
   flex-wrap: wrap;
 }
 
-.h3_text_greeting {
-  width: 250px;
-}
-
 .form-control {
   width: 250px;
   border: 0;
