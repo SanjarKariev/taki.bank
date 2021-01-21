@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-public class signInController {
+public class SignInController {
 
     @GetMapping("/signIn")
     public String signIn(Model model) {

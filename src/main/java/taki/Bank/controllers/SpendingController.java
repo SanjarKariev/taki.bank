@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
-public class spendingController {
+public class SpendingController {
 
     @GetMapping("/spending")
     public String spending(Model model) {

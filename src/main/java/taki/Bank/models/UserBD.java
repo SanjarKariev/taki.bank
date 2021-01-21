@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.sql.Date;
 
 @Entity
-public class userBD {
+public class UserBD {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,7 +20,7 @@ public class userBD {
     private Date birthDay;
     private long MobileNumber;
 
-    public userBD(Long id, String name, String surname, String patronymic, String email, Date birthDay, long mobileNumber) {
+    public UserBD(Long id, String name, String surname, String patronymic, String email, Date birthDay, long mobileNumber) {
         this.id = id;
         this.name = name;
         this.surname = surname;

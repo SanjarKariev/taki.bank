@@ -3,18 +3,18 @@ package taki.Bank.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import taki.Bank.repository.userBDRepository;
-import taki.Bank.models.userBD;
+import taki.Bank.repository.UserBDRepository;
+import taki.Bank.models.UserBD;
 
 
-public class homeController {
+public class HomeController {
 
     @Autowired
-    private userBDRepository userBDRepository;
+    private UserBDRepository userBDRepository;
 
     @GetMapping("/")
     public String home(Model model) {
-        Iterable<userBD> UserBD = userBDRepository.findAll();
+        Iterable<UserBD> UserBD = userBDRepository.findAll();
         model.addAttribute("User", UserBD);
         return "home";
     }
