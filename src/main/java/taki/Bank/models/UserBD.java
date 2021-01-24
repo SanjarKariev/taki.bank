@@ -20,6 +20,9 @@ public class UserBD {
     private Date birthDay;
     private long MobileNumber;
 
+    public UserBD() {
+    }
+
     public UserBD(Long id, String name, String surname, String patronymic, String email, Date birthDay, long mobileNumber) {
         this.id = id;
         this.name = name;

@@ -24,7 +24,7 @@ public class SignUpController {
         model.addAttribute("User", UserBD);
         return "signUp";
     }
-    @PostMapping
+    /*@PostMapping
     public String add(@RequestParam Long id,
                       @RequestParam String name,
                       @RequestParam String surname,
@@ -34,12 +34,12 @@ public class SignUpController {
                       @RequestParam long mobileNumber,
                       Map<String, Object> model){
 
-        UserBD user_BD = new UserBD(id, name, surname, patronymic, email, birthDay, mobileNumber);
+        UserBD userBD = new UserBD(id, name, surname, patronymic, email, birthDay, mobileNumber);
 
-        userBDRepository.save(user_BD);
+        userBDRepository.save(userBD);
         Iterable<UserBD> UserBD = userBDRepository.findAll();
         model.put("User", UserBD);
 
-        return "signUp";
-    }
+        return "redirect:/signIn";
+    }*/
 }

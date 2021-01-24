@@ -1,28 +1,40 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link th:href="@{/css/main.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
-        <link th:href="@{/css/header.css}" rel="stylesheet" /> <!--including CSS files with Thymeleaf-->
-        <link th:href="@{/js/home.js}" rel="stylesheet" /> <!--including JS files with Thymeleaf-->
-        <link rel="shortcut icon" th:href="@{/img/logo.ico}" type="image/x-icon"> <!--including ico files with Thymeleaf-->
+    <link th:href="@{/css/main.css}" rel="stylesheet" />
+    <!--including CSS files with Thymeleaf-->
+    <link th:href="@{/css/header.css}" rel="stylesheet" />
+    <!--including CSS files with Thymeleaf-->
+    <link th:href="@{/js/home.js}" rel="stylesheet" />
+    <!--including JS files with Thymeleaf-->
+    <link rel="shortcut icon" th:href="@{/img/logo.ico}" type="image/x-icon">
+    <!--including ico files with Thymeleaf-->
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"><!--the library with the font is pulled up-->
-        <title>Bank</title>
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--the library with the font is pulled up-->
+    <title>Bank</title>
+</head>
 
-    <body>
-        <header th:insert="block/header :: header"></header> <!--including HTML files with Thymeleaf-->
-        <div class="lef">
-            <div class="payments" ><!--th:each="user: ${userBD}"-->
-                <!--<h3 th:text="${user.number_card}">Number Card</h3>
+
+
+
+<body>
+    <header th:insert="block/header :: header"></header>
+    <!--including HTML files with Thymeleaf-->
+    <div class="lef">
+        <div class="payments">
+            <div each="user : ${clients}">
+                <h3 th:text="${user.number_card}">Number Card</h3>
                 <p th:text="${user.name}">Name</p>
                 <p th:text="${user.surname}">Surname</p>
-                <p th:text="${user.patronymic}">Patronymic</p>-->
+                <p th:text="${user.patronymic}">Patronymic</p>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

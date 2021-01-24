@@ -15,7 +15,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         Iterable<UserBD> UserBD = userBDRepository.findAll();
-        model.addAttribute("User", UserBD);
+        model.addAttribute("clients", UserBD);
         return "home";
     }
 }

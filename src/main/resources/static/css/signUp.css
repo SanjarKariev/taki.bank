@@ -20,7 +20,7 @@ a.buttonSignUp {
   position: relative;
   margin: 20px auto;
   text-align: center;
-  text-decoratiform-signinon: none;
+  text-decoration: none;
 }
 
 a.buttonSignUp:hover {
